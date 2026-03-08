@@ -1,0 +1,27 @@
+.react-flow__controls {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+}
+
+.react-flow__controls-button {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #374151 !important;
+}
+
+.react-flow__attribution {
+  background: rgba(31, 41, 55, 0.8) !important;
+  color: #9ca3af !important;
+}
+
+.react-flow__edge-path {
+  stroke: #6b7280 !important;
+}
+
+.react-flow__handle {
+  background: #9ca3af !important;
+}
