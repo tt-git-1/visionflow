@@ -8,14 +8,14 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# CORS 設定（フロントエンドからのアクセス許可）
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# # CORS 設定（フロントエンドからのアクセス許可）
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["http://localhost:3000"],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 # ルーターの登録
 app.include_router(workflows.router)

@@ -21,6 +21,7 @@ import { ImageViewer } from "../src/components/ImageViewer";
 import { NodeSettings } from "../src/components/NodeSettings";
 import { NodeType, NodeData } from "../src/types";
 import { ContextMenu } from "../src/components/ContextMenu";
+import { ChatPanel } from "../src/components/ChatPanel";
 
 const initialNodes: Node<NodeData & Record<string, unknown>>[] = [];
 const initialEdges: Edge[] = [];
@@ -38,6 +39,7 @@ export default function Home() {
     params: Record<string, any>;
   } | null>(null);
   const [selectModeEnabled, setSelectModeEnabled] = useState(false);
+  const [chatBaseURL, setChatBaseURL] = useState("http://localhost:1234/v1");
   const [contextMenu, setContextMenu] = useState<{
     nodeId: string;
     x: number;
@@ -362,6 +364,8 @@ export default function Home() {
         isExecuting={isExecuting}
         onSelectModeToggle={setSelectModeEnabled}
         selectModeEnabled={selectModeEnabled}
+        baseURL={chatBaseURL}
+        onBaseURLChange={setChatBaseURL}
       />
 
       {viewerImage && (
@@ -389,6 +393,8 @@ export default function Home() {
           onClose={() => setContextMenu(null)}
         />
       )}
+
+      <ChatPanel baseURL={chatBaseURL} />
       </div>
     </ReactFlowProvider>
   );

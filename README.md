@@ -18,6 +18,7 @@ A node-based visual workflow editor for image processing. Build powerful image m
 - **Workflow Persistence**: Save and load workflows as JSON files
 - **Select Mode**: Multi-select nodes by dragging for batch operations
 - **Custom Node Colors**: Right-click on any node to change its color (10 colors available)
+- **AI Assistant Chat**: Built-in AI chat support to help with workflow creation and image processing questions
 - **Dark Theme**: Modern dark UI for comfortable extended use
 
 ## 🚀 Quick Start
@@ -108,6 +109,17 @@ Click **"Run Workflow"** in the top-right controls panel to execute your pipelin
 - **Zoom**: Scroll wheel (0.1x - 5x)
 - **Pan**: Click and drag
 - **Save**: Download processed images as PNG
+
+### 6. AI Assistant
+
+The chat panel at the bottom of the screen provides AI assistance for:
+- Explaining image processing techniques
+- Helping with workflow creation
+- Answering questions about filter algorithms
+
+To use it, ensure a local LLM server is running (e.g., LM Studio), then type your question and press Enter to send.
+
+**Chat Settings**: Click the **⚙️ Chat Settings** button in the Controls panel (top-right) to configure the OpenAI API compatible URL. Default: `http://localhost:1234/v1`
 
 ## 🔧 Available Nodes
 
