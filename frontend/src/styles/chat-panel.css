@@ -1,0 +1,109 @@
+/* Transparent Glass UI for Chat Panel */
+
+
+.glass-panel {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.08) 0%,
+        rgba(255, 255, 255, 0.04) 100%
+    ) !important;
+    backdrop-filter: blur(30px) saturate(200%) !important;
+    -webkit-backdrop-filter: rgba(255, 255, 255, 0.18) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow:
+     0 8px 32px 0 rgba(0, 0, 0, 0.2),
+     inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
+     inset 0 -1px 0 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+/* — Glass Input — */
+.glass-input {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  ) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 0.75rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  color: white !important;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.glass-input:focus {
+  outline: none !important;
+}
+
+/* — Glass Button — */
+.glass-button {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  ) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0.75rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  color: white !important;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.glass-button:hover:not(:disabled) {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.12) 100%
+  ) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  border-top-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow:
+    0 4px 12px rgba(255, 255, 255, 0.2),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.25) !important;
+  transform: translateY(-1px);
+}
+
+.glass-button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.15) !important;
+}
+
+/* — Glass Message Bubble — */
+.glass-message {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  ) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 1rem !important;
+  padding: 0.75rem !important;
+  font-size: 0.875rem !important;
+  color: white !important;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.12) !important;
+}
